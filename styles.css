@@ -1,0 +1,382 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, input, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Archivo', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.root {
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ======================== BEGIN HEADER ======================== */
+.header-section {
+  background-image: url('images/bg-header.png');
+  background-position: center;
+}
+
+.top-header {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper > img {
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.list-item {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.item {
+  float: left;
+  padding: 0 25px;
+}
+
+.item a {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+.external-link-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.transparent-btn {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px 10px 24px;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.transparent-btn > span {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 135%;
+}
+
+.language-txt {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  margin-inline-start: 20px;
+  cursor: pointer;
+}
+
+.bottom-header {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.title-header-wrapper {
+  margin-bottom: 30px;
+}
+
+.title-header {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.description-header-wrapper {
+  margin-bottom: 40px;
+}
+
+.description-header {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: white;
+}
+/* ======================== END HEADER ======================== */
+
+/* ======================== BEGIN MAIN CONTENT ======================== */
+.hero-banner-1 {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.tag-banner-wrapper {
+  text-align: center;
+}
+
+.tag-banner {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #18181B;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.title-banner-wrapper {
+  max-width: 748px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.title-banner {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 130%;
+  color: #18181B;
+}
+
+.content-banner-wrapper {
+  gap: 140px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.description-banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 22px;
+}
+
+.description-banner {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  color: #18181B;
+  max-width: 580px;
+}
+
+.hero-banner-2 {
+  padding: 100px 0;
+  background-color: #F7F7F7;
+}
+
+.list-advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+}
+
+.advantage {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: 52px auto;
+}
+
+.advantage > img {
+  margin-top: 4px;
+}
+
+.title-advantage {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  color: #18181B;
+  padding-bottom: 12px;
+}
+
+.buttons-block {
+  display: flex;
+  gap: 26px;
+}
+/* ======================== END MAIN CONTENT ======================== */
+
+/* ======================== CONTACT FORM ======================== */
+.contact-form {
+  gap: 150px;
+  display: grid;
+  padding: 140px 0 83px 0; 
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-section {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 530px;
+}
+
+.primary-area,
+.primary-input {
+  padding: 20px;
+  width: calc(100% - 40px);
+  border: 1px solid #F9F9F9;
+  background-color: #F9F9F9;
+
+  /* typo */
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  color: #18181B;
+}
+
+.primary-area::placeholder,
+.primary-input::placeholder {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 140%;
+  color: #424242;
+}
+
+.primary-input {
+  height: 20px;
+}
+
+.submit-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+/* ======================== END CONTACT FORM ======================== */
+
+/* ======================== FOOTER ======================== */
+.footer-section {
+  padding: 73px 0 57px 0;
+  background-color: #18181B;
+}
+
+.top-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 53px;
+  border-bottom: 1px solid rgba(249, 249, 249, 0.1);
+}
+
+.intro-footer {
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 140%;
+  max-width: 690px;
+}
+
+.bottom-footer {
+  padding-top: 40px;
+}
+
+.group-wrapper {
+  display: grid;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(5, 240px);
+}
+
+.group {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-group {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.link {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.social-footer {
+  gap:30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: flex-start;
+}
+
+.copyright {
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 130%;
+  padding-inline-start: 27px;
+}
+/* ======================== END FOOTER ======================== */
+
+/* ======================== COMMON ======================== */
+.container {
+  max-width: 1410px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+.primary-btn {
+  gap: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7D138;
+  padding: 10px 16px 10px 24px;
+  border: 1px solid #F7D138;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  box-shadow: 2px 2px 7px rgba(100, 101, 103, 0.25);
+}
+.secondary-btn {
+  padding: 12px 24px;
+  border: 1px solid #18181B;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.secondary-btn:hover {
+  border: 1px solid #F7D138;
+  background-color: #F7D138;
+}
+.secondary-btn > span,
+.primary-btn > span {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 135%;
+  color: #18181B;
+}
+.white {
+  color: #FFFFFF;
+}
+.yellow {
+  color: #F7D138;
+}
+.w-450 {
+  width: 450px;
+}
+.mb-19 {
+  margin-bottom: 19px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mb-74 {
+  margin-bottom: 74px;
+}
+/* ======================== END COMMON ======================== */
