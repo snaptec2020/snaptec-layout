@@ -21,9 +21,9 @@
         <div class="logo-wrapper">
           <img src="images/logo.png" alt="SnapTec logo" />
         </div>
-        <div class="menu-wrapper">
+        <div class="menu-wrapper only-desktop">
           <!-- TODO: update real link -->
-          <ul class="list-item only-desktop">
+          <ul class="menu">
             <li class="item"><a href="#services">Services</a></li>
             <li class="item"><a href="#solutions">Solutions</a></li>
             <li class="item"><a href="#case-studies">Case studies</a></li>
@@ -39,7 +39,17 @@
           </a>
           <!-- TODO: dynamic by data AR/EN -->
           <span class="language-txt only-desktop">AR</span>
-          <img class="only-mobile button" src="images/hambuger-menu.svg" alt="hambuger menu" width="24" height="24" />
+          <input id="menu-toggle" type="checkbox" />
+          <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+          </label>
+          <ul class="menu only-mobile">
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#solutions">Solutions</a></li>
+            <li class="item"><a href="#case-studies">Case studies</a></li>
+            <li class="item"><a href="#clients">Clients</a></li>
+            <li class="item"><a href="#about-us">About us</a></li>
+          </ul>
         </div>
       </div>
       <div class="bottom-header container">
