@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AWS Community page</title>
+  <title>SNAPTEC home page</title>
 
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +19,11 @@
     <div class="header-section">
       <div class="top-header container">
         <div class="logo-wrapper">
-          <img src="images/logo.png" width="auto" height="36" />
+          <img src="images/logo.png" alt="SnapTec logo" />
         </div>
         <div class="menu-wrapper">
           <!-- TODO: update real link -->
-          <ul class="list-item">
+          <ul class="list-item only-desktop">
             <li class="item"><a href="#services">Services</a></li>
             <li class="item"><a href="#solutions">Solutions</a></li>
             <li class="item"><a href="#case-studies">Case studies</a></li>
@@ -32,22 +32,25 @@
           </ul>
         </div>
         <div class="external-link-wrapper">
-          <div class="item mr-40"><a href="/contact">Contact</a></div>
+          <div class="item mr-40 only-desktop"><a href="/contact">Contact</a></div>
           <a class="primary-btn" href="#">
             <span>Get in Touch</span>
-            <img src="images/black_arrow.png" width="24" height="24" />
+            <img class="only-desktop" src="images/black_arrow.png" width="24" height="24" />
           </a>
           <!-- TODO: dynamic by data AR/EN -->
-          <span class="language-txt">AR</span>
+          <span class="language-txt only-desktop">AR</span>
+          <img class="only-mobile button" src="images/hambuger-menu.svg" alt="hambuger menu" width="24" height="24" />
         </div>
       </div>
       <div class="bottom-header container">
         <div class="title-header-wrapper">
-          <h1 class="title-header white">Building secure and scalable</h1>
-          <h1 class="title-header yellow">E-commerce solutions</h1>
-          <h1 class="title-header white">with AWS cloud expertise </h1>
+          <h1 class="title-header white only-desktop">Building secure and scalable</h1>
+          <h1 class="title-header yellow only-desktop">E-commerce solutions</h1>
+          <h1 class="title-header white only-desktop">with AWS cloud expertise</h1>
+          <h1 class="title-header white only-mobile">Building secure and scalable <span class="yellow">E-commerce
+              solutions</span> with AWS cloud expertise</h1>
         </div>
-        <div class="btn-group">
+        <div class="btn-group only-desktop">
           <a class="primary-btn" href="#">
             <span>Get in Touch</span>
             <img src="images/black_arrow.png" width="24" height="24" />
@@ -66,7 +69,7 @@
     <!-- SUMMARY -->
     <div class="summary container">
       <h3 class="summary-title">We are digital design agency with added value for your business solutions.</h3>
-      <div class="container-info-summary">
+      <div class="container-info-summary only-desktop">
         <div class="group-info-summary">
           <p class="count-info-summary">450 +</p>
           <span class="label-info-summary">Satisfied Clients</span>
@@ -87,15 +90,42 @@
           <span class="label-info-summary">Offices</span>
         </div>
       </div>
+
+      <div class="container-info-summary-mobile only-mobile">
+        <div class="parent-group-info-summary">
+          <div class="group-info-summary">
+            <p class="count-info-summary">450 +</p>
+            <span class="label-info-summary">Satisfied Clients</span>
+          </div>
+          <div class="group-info-summary">
+            <p class="count-info-summary">100 +</p>
+            <span class="label-info-summary">Team Members</span>
+          </div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="parent-group-info-summary">
+          <div class="group-info-summary">
+            <p class="count-info-summary">10 +</p>
+            <span class="label-info-summary">Years Experience</span>
+          </div>
+          <div class="group-info-summary">
+            <p class="count-info-summary">3</p>
+            <span class="label-info-summary">Offices</span>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END SUMMARY -->
 
     <!-- OUR SOLUTION -->
     <div class="block container">
       <h2 class="title">Our Solution</h2>
-      <p class="description">We provide a range of solutions to meet your business needs.<br>
+      <p class="description only-desktop">We provide a range of solutions to meet your business needs.<br>
         Our SaaS E-Commerce Solution optimizes and scales your platform, while Custom E-Commerce<br>Solution offers a
         unique brand experience. Explore cloud efficiency with our Cloud Solution.</p>
+      <p class="description only-mobile">We provide a range of solutions to meet your business needs. Our SaaS
+        E-Commerce Solution optimizes and scales your platform, while Custom E-Commerce Solution offers a unique brand
+        experience. Explore cloud efficiency with our Cloud Solution.</p>
       <div class="list-card-solution">
         <div class="card-solution">
           <h5 class="title-card">Saas E-Commerce Solution</h5>
@@ -135,9 +165,9 @@
     <!-- END OUR SOLUTION -->
 
     <!-- OUR SERVICES -->
-    <div class="bg-grey pt-100">
+    <div class="services">
       <div class="block container">
-        <h2 class="title">Our Solution</h2>
+        <h2 class="title">Our Services</h2>
         <p class="description">We offer a comprehensive suite of services that encompasses cutting-edge design that
           captures the brand's essence to expert web and mobile development.</p>
         <div class="list-card-services">
@@ -145,7 +175,7 @@
             <div class="content-card-services">
               <img src="images/service_1.svg" width="45" height="45" alt="UI/UX Design" />
               <div>
-                <h5 class="title-card mb-18">UI/UX Design</h5>
+                <h5 class="title-card mb-18 mb-12-mobile">UI/UX Design</h5>
                 <p class="description-card">Our UI/UX team is passionate and detail-oriented, capable of creating
                   innovative website designs and applications with a focus on layout, color scheme, and typography
                   following design trends</p>
@@ -154,9 +184,9 @@
           </div>
           <div class="card-services">
             <div class="content-card-services">
-              <img src="images/service_1.svg" width="45" height="45" alt="Web Development" />
+              <img src="images/service_2.svg" width="45" height="45" alt="Web Development" />
               <div>
-                <h5 class="title-card mb-18">Web Development</h5>
+                <h5 class="title-card mb-18 mb-12-mobile">Web Development</h5>
                 <p class="description-card">We offer custom-built websites and Saas products that combine stunning
                   design, seamless functionality, and exceptional user experiences to help businesses establish a strong
                   online presence.</p>
@@ -165,9 +195,9 @@
           </div>
           <div class="card-services">
             <div class="content-card-services">
-              <img src="images/service_1.svg" width="45" height="45" alt="Mobile Development" />
+              <img src="images/service_3.svg" width="45" height="45" alt="Mobile Development" />
               <div>
-                <h5 class="title-card mb-18">Mobile Development</h5>
+                <h5 class="title-card mb-18 mb-12-mobile">Mobile Development</h5>
                 <p class="description-card">Our team of web developers creates innovative and powerful websites that
                   combine stunning design, seamless functionality, and exceptional user experiences.</p>
               </div>
@@ -175,9 +205,9 @@
           </div>
           <div class="card-services">
             <div class="content-card-services">
-              <img src="images/service_1.svg" width="45" height="45" alt="Maintenance & Support" />
+              <img src="images/service_4.svg" width="45" height="45" alt="Maintenance & Support" />
               <div>
-                <h5 class="title-card mb-18">Maintenance & Support</h5>
+                <h5 class="title-card mb-18 mb-12-mobile">Maintenance & Support</h5>
                 <p class="description-card">We offer 24/7 technical service to ensure your systems run smoothly and
                   maximize the productivity of your business.</p>
               </div>
@@ -189,7 +219,7 @@
     <!-- END OUR SERVICES -->
 
     <!-- STRATEGIC PARTNERS -->
-    <div class="container block pt-100">
+    <div class="container block partners">
       <h2 class="title">Strategic Partners</h2>
       <p class="description">Our partnerships bring together experience and resources, enabling us to create
         end-<br>to-end solutions tailored to our clients' needs.</p>
@@ -213,7 +243,7 @@
               pay quickly, easily and securely.</p>
           </div>
         </div>
-        <div class="card-partners">
+        <div class="card-partners only-desktop">
           <img src="images/partners_3.png" alt="Hyper Pay" height="60" />
           <div class="line"></div>
           <div class="content-card-partners">
@@ -221,7 +251,7 @@
             <p class="description-card white">Providing a reliable, secure and scalable way to make payments online.</p>
           </div>
         </div>
-        <div class="card-partners">
+        <div class="card-partners only-desktop">
           <img src="images/partners_4.png" alt="Amazon Pay" height="60" />
           <div class="line"></div>
           <div class="content-card-partners">
@@ -230,7 +260,7 @@
               millions of active Amazon users.</p>
           </div>
         </div>
-        <div class="card-partners">
+        <div class="card-partners only-desktop">
           <img src="images/partners_5.png" alt="Alibaba Cloud" height="60" />
           <div class="line"></div>
           <div class="content-card-partners">
@@ -249,7 +279,7 @@
 
     <!-- ARTICLE -->
     <div class="container block article">
-      <div>
+      <div class="group-article">
         <img src="images/article.png" alt="Title of article Lorem ipsum dolor sit amet consectetur." width="690"
           height="400" />
         <div class="mt-24">
@@ -261,7 +291,7 @@
             that we solve for our customers. </p>
         </div>
       </div>
-      <div>
+      <div class="only-desktop">
         <div class="mb-80">
           <p class="label">BLOCK TITLE</p>
           <h5 class="title-card mb-20">Title of article Lorem ipsum dolor sit amet consectetur.</h5>
@@ -285,47 +315,56 @@
       </div>
     </div>
     <!-- END ARTICLE -->
-
   </div>
   <footer class="footer-section">
     <div class="top-footer container">
       <p class="intro-footer">
         Want to grow your business? Join us today and<br>we'll help take your business to the next level.
       </p>
-      <a class="primary-btn" href="#">
-        <span>Get in Touch</span>
-        <img src="images/black_arrow.png" width="24" height="24" />
-      </a>
+      <div class="wrapper-submit-btn-footer">
+        <a class="primary-btn" href="#">
+          <span>Get in Touch</span>
+          <img src="images/black_arrow.png" width="24" height="24" />
+        </a>
+      </div>
     </div>
     <div class="bottom-footer container">
       <div class="group-wrapper">
         <div class="group">
           <p class="title-group" href="#">company</p>
-          <a class="link" href="#">About us</a>
-          <a class="link" href="#">AWS Partnership</a>
-          <a class="link" href="#">Clients</a>
-          <a class="link" href="#">Blog</a>
-          <a class="link" href="#">Contact</a>
+          <div class="child-group">
+            <a class="link" href="#">About us</a>
+            <a class="link" href="#">AWS Partnership</a>
+            <a class="link" href="#">Clients</a>
+            <a class="link" href="#">Blog</a>
+            <a class="link" href="#">Contact</a>
+          </div>
         </div>
         <div class="group">
           <p class="title-group" href="#">services</p>
-          <a class="link" href="#">Design</a>
-          <a class="link" href="#">Web development</a>
-          <a class="link" href="#">Mobile Development</a>
-          <a class="link" href="#">Maintenance & Support</a>
+          <div class="child-group">
+            <a class="link" href="#">Design</a>
+            <a class="link" href="#">Web development</a>
+            <a class="link" href="#">Mobile Development</a>
+            <a class="link" href="#">Maintenance & Support</a>
+          </div>
         </div>
         <div class="group">
           <p class="title-group" href="#">solutions</p>
-          <a class="link" href="#">Saas Ecommerce Solution</a>
-          <a class="link" href="#">Custom Ecommerce Solution</a>
-          <a class="link" href="#">Cloud Solutions</a>
+          <div class="child-group">
+            <a class="link" href="#">Saas Ecommerce Solution</a>
+            <a class="link" href="#">Custom Ecommerce Solution</a>
+            <a class="link" href="#">Cloud Solutions</a>
+          </div>
         </div>
         <div class="group">
           <p class="title-group" href="#">resources</p>
-          <a class="link" href="#">Useful Link</a>
-          <a class="link" href="#">Useful Link</a>
-          <a class="link" href="#">Useful Link</a>
-          <a class="link" href="#">Useful Link</a>
+          <div class="child-group">
+            <a class="link" href="#">Useful Link</a>
+            <a class="link" href="#">Useful Link</a>
+            <a class="link" href="#">Useful Link</a>
+            <a class="link" href="#">Useful Link</a>
+          </div>
         </div>
         <div class="group">
           <p class="title-group" href="#">legal</p>
@@ -347,8 +386,9 @@
       <a class="icon" href="#">
         <img src="images/behance.png" alt="behance" width="24" height="24" />
       </a>
-      <span class="copyright">© Copyright 2023 SnapTec · All rights reserved</span>
+      <span class="copyright only-desktop">© Copyright 2023 SnapTec · All rights reserved</span>
     </div>
+    <p class="copyright only-mobile">© Copyright 2023 SnapTec · All rights reserved</p>
   </footer>
 </body>
 
