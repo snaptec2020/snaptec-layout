@@ -538,7 +538,7 @@ a {
 .group-wrapper {
   display: grid;
   margin-bottom: 50px;
-  grid-template-columns: repeat(5, 240px);
+  grid-template-columns: repeat(5, 440px);
 }
 
 .child-group,
