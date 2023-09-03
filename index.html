@@ -233,56 +233,106 @@
       <h2 class="title">Strategic Partners</h2>
       <p class="description">Our partnerships bring together experience and resources, enabling us to create
         end-<br>to-end solutions tailored to our clients' needs.</p>
-      <div class="list-card-partners">
-        <div class="card-partners">
-          <img src="images/partners_1.png" alt="AWS" height="60" />
-          <div class="line"></div>
-          <div class="content-card-partners">
-            <h5 class="title-card white">AWS</h5>
-            <p class="description-card white">Providing powerful and reliable cloud solutions for e-commerce: the
-              ability to scale infrastructure, save on infrastructure costs, ensure high availability and data security.
-            </p>
+      <div class="carousel">
+        <div class="list-card-partners">
+          <div class="card-partners">
+            <img src="images/partners_1.png" alt="AWS" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">AWS</h5>
+              <p class="description-card white">Providing powerful and reliable cloud solutions for e-commerce: the
+                ability to scale infrastructure, save on infrastructure costs, ensure high availability and data
+                security.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card-partners">
-          <img src="images/partners_2.png" alt="Apple Pay" height="60" />
-          <div class="line"></div>
-          <div class="content-card-partners">
-            <h5 class="title-card white">Apple Pay</h5>
-            <p class="description-card white">Providing a convenient and secure online payment method that allows you to
-              pay quickly, easily and securely.</p>
+          <div class="card-partners">
+            <img src="images/partners_2.png" alt="Apple Pay" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">Apple Pay</h5>
+              <p class="description-card white">Providing a convenient and secure online payment method that allows you
+                to
+                pay quickly, easily and securely.</p>
+            </div>
           </div>
-        </div>
-        <div class="card-partners only-desktop">
-          <img src="images/partners_3.png" alt="Hyper Pay" height="60" />
-          <div class="line"></div>
-          <div class="content-card-partners">
-            <h5 class="title-card white">Hyper Pay</h5>
-            <p class="description-card white">Providing a reliable, secure and scalable way to make payments online.</p>
+          <div class="card-partners">
+            <img src="images/partners_3.png" alt="Hyper Pay" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">Hyper Pay</h5>
+              <p class="description-card white">Providing a reliable, secure and scalable way to make payments online.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card-partners only-desktop">
-          <img src="images/partners_4.png" alt="Amazon Pay" height="60" />
-          <div class="line"></div>
-          <div class="content-card-partners">
-            <h5 class="title-card white">Amazon Pay</h5>
-            <p class="description-card white">Providing secure and convenient payment options to accept payments from
-              millions of active Amazon users.</p>
+          <div class="card-partners">
+            <img src="images/partners_4.png" alt="Amazon Pay" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">Amazon Pay</h5>
+              <p class="description-card white">Providing secure and convenient payment options to accept payments from
+                millions of active Amazon users.</p>
+            </div>
           </div>
-        </div>
-        <div class="card-partners only-desktop">
-          <img src="images/partners_5.png" alt="Alibaba Cloud" height="60" />
-          <div class="line"></div>
-          <div class="content-card-partners">
-            <h5 class="title-card white">Alibaba Cloud</h5>
-            <p class="description-card white">Providing powerful cloud solutions for scaling your e-commerce business
-              that provide high performance, scalability and reliability.</p>
+          <div class="card-partners">
+            <img src="images/partners_5.png" alt="Alibaba Cloud" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">Alibaba Cloud</h5>
+              <p class="description-card white">Providing powerful cloud solutions for scaling your e-commerce business
+                that provide high performance, scalability and reliability.</p>
+            </div>
+          </div>
+          <div class="card-partners">
+            <img src="images/partners_6.png" alt="Terl" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">Terl</h5>
+              <p class="description-card white">Providing effective inventory management, reducing costs, and increasing
+                turnover.</p>
+            </div>
+          </div>
+          <div class="card-partners">
+            <img src="images/partners_7.png" alt="Tabby" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">Tabby</h5>
+              <p class="description-card white">Provides payment for purchases in convenient installments</p>
+            </div>
+          </div>
+          <div class="card-partners">
+            <img src="images/partners_8.png" alt="Tamara" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">Tamara</h5>
+              <p class="description-card white">Provides payment for purchases in convenient installments</p>
+            </div>
+          </div>
+          <div class="card-partners">
+            <img src="images/partners_9.png" alt="Huawei" height="60" />
+            <div class="line"></div>
+            <div class="content-card-partners">
+              <h5 class="title-card white">Huawei</h5>
+              <p class="description-card white">Provides payment flexibility by allowing to choose from a variety of
+                payment options</p>
+            </div>
           </div>
         </div>
       </div>
       <div class="arrows-slider">
-        <img src="images/previous-arrow.svg" alt="previous arrow" width="24" height="24" />
-        <img src="images/next-arrow.svg" alt="next arrow" width="24" height="24" />
+        <button onclick="onPrev(30)" class="prev only-desktop" type="button">
+          <img src="images/previous-arrow.svg" alt="previous arrow" width="24" height="24" />
+        </button>
+        <button onclick="onNext(30, 4)" class="next only-desktop" type="button">
+          <img src="images/next-arrow.svg" alt="next arrow" width="24" height="24" />
+        </button>
+        <button onclick="onPrev(16)" class="prev only-mobile" type="button">
+          <img src="images/previous-arrow.svg" alt="previous arrow" width="24" height="24" />
+        </button>
+        <button onclick="onNext(16, 2)" class="next only-mobile" type="button">
+          <img src="images/next-arrow.svg" alt="next arrow" width="24" height="24" />
+        </button>
+        </button>
       </div>
     </div>
     <!-- END STRATEGIC PARTNERS -->
@@ -400,6 +450,8 @@
     </div>
     <p class="copyright only-mobile">© Copyright 2023 SnapTec · All rights reserved</p>
   </footer>
+
+  <script type="text/javascript" src="carousel.js"></script>
 </body>
 
 </html>
