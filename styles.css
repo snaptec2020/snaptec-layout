@@ -135,7 +135,7 @@ a {
 
 .summary-title {
   max-width: 570px;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 600;
   line-height: 130%;
 }
@@ -552,6 +552,7 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
+  width: fit-content;
 }
 
 .social-footer {
@@ -740,6 +741,28 @@ a {
   }
 }
 /* ======================== END HAMBURGER MENU ======================== */
+
+/* ======================== CLIENTS ======================== */
+.clients {
+  display: grid;
+  row-gap: 40px;
+  column-gap: 55px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+.logo-client > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .clients {
+    margin-top: 60px !important;
+    margin-bottom: 60px !important;
+  }
+}
+/* ======================== END CLIENTS ======================== */
 
 /* ======================== COMMON ======================== */
 .container {
