@@ -42,7 +42,7 @@ a {
   border-bottom: 1px solid white;
 }
 
-.logo-wrapper > img {
+.logo-wrapper > a > img {
   width: auto;
   height: 36px;
   cursor: pointer;
@@ -100,7 +100,7 @@ a {
     border-bottom: none;
   }
 
-  .logo-wrapper > img {
+  .logo-wrapper > a > img {
     height: 20px;
   }
 
